@@ -1,0 +1,12 @@
+{
+    "侍僧": {
+        "chinese": "侍僧",
+        "english": "Acolyte",
+        "url": "https://5e.dickytwister.org/backgrounds.html#%e4%be%8d%e5%83%a7_phb",
+        "description": {
+            "技能熟练": ["洞察", "宗教"],
+            "语言": "自选两种",
+            "装备": "一个圣徽（一份当你成为教士时获得的礼物）、一本祷经或转经轮、5支焚香、祭祀服、一套寻常服装、和一个装有15金币的寻常囊袋"
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "python-envs.defaultEnvManager": "ms-python.python:system",
+    "python-envs.pythonProjects": [],
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true
+    },
+    "autoHeader": {
+        "format": {
+            "startWith": "#=",
+            "middleWith": "*",
+            "endWith": "=#",
+            "headerPrefix": "@",
+        },
+        "header": {
+            "Author": "FlowDND",
+            "Create Time": {
+                "type": "createTime",
+                "format": "YYYY-MM-DD HH:mm:ss",
+            },
+            "Description": "FDRoller is a dice roller for TRPG.",
+        }
+    }
+}
