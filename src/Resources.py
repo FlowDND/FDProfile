@@ -34,6 +34,15 @@ RACE_JSON_PATH: str = "../resources/5E/race.json"
 RACE_JSON_PATH: str = abspath(RACE_JSON_PATH)
 RACE_DICT: dict = loadjson(RACE_JSON_PATH)
 
+BASIC_PROPERTY_LIST: list = [
+    "力量",
+    "敏捷",
+    "体质",
+    "智力",
+    "感知",
+    "魅力",
+]
+
 SKILLED_PROPERTY_DICT: dict = {
     "体操": "敏捷",
     "驯兽": "感知",

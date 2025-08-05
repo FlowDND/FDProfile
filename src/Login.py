@@ -17,7 +17,7 @@ DEFAULT_USER_JSON_FILE: str = os.path.join(
 )
 
 
-def check(group_name: str, user: str) -> tuple[bool, str]:
+def check(group_name: str, user: str, password: str) -> tuple[bool, str]:
     user_json_file: str = os.path.join(
         GROUP_PATH_DICT[group_name], f"{user}", f"{user}.json"
     )
@@ -25,7 +25,15 @@ def check(group_name: str, user: str) -> tuple[bool, str]:
         return False, "wrong."
         pass
     else:
-        return True, user_json_file
+        # return True, user_json_file
+        with open(user_json_file, "r", encoding="utf-8") as user_json:
+            user_dict: dict = json.load(user_json)
+            if user_dict["password"] == password:
+                return True, user_json_file
+            else:
+                return False, "wrong password."
+                pass
+            pass
         pass
     pass
 
